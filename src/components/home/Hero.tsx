@@ -35,7 +35,7 @@ export function Hero() {
         {/* Photography */}
         <div className="relative -mx-[var(--gutter)] sm:mx-0 lg:order-2 lg:col-span-5 lg:col-start-8">
           {/* Art-directed: phones get a square crop, larger screens the full portrait */}
-          <figure className="frame settle">
+          <figure className="frame settle before:hidden after:hidden sm:before:block sm:after:block">
             <div className="frame__img aspect-square max-h-[78svh] sm:aspect-[4/5]">
               <picture>
                 <source media="(min-width: 640px)" srcSet={heroWide.srcSet} sizes={heroWide.sizes} />
